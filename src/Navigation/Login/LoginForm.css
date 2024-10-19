@@ -1,0 +1,109 @@
+/* Variables for consistent colors and styling */
+:root {
+    --primary-color: #007bff; /* Bootstrap primary color */
+    --hover-color: #0056b3; /* Darker shade for hover */
+    --error-color: red; /* Color for error messages */
+    --form-background: white; /* Background for the form */
+    --form-shadow: rgba(0, 0, 0, 0.1); /* Shadow color for the form */
+    --form-border-radius: 8px; /* Border radius for rounded corners */
+    --container-width: 400px; /* Width of the form container */
+  }
+  
+  .Login-form-container {
+    background-color: var(--form-background); /* White background for the form container */
+    padding: 20px;
+    border-radius: var(--form-border-radius); /* Rounded corners */
+    box-shadow: 0 2px 10px var(--form-shadow); /* Subtle shadow */
+    width: var(--container-width); /* Fixed width for the form */
+    margin: 50px auto; /* Center the form horizontally */
+  }
+  
+  .Login-title {
+    text-align: center; /* Center the title */
+    color: #333; /* Darker text for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .login-email, 
+  .password-email {
+    margin-bottom: 15px; /* Space between email and password fields */
+  }
+  
+  label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make label bold */
+  }
+  
+  input {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Inner padding for input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded input corners */
+    font-size: 16px; /* Font size for input text */
+  }
+  
+  input:focus {
+    border-color: var(--primary-color); /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: var(--primary-color); /* Bootstrap primary color */
+    color: white; /* White text on button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded button corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Font size for button text */
+  }
+  
+  button:hover {
+    background-color: var(--hover-color); /* Darker blue on hover */
+  }
+  
+  p.sign-up-text {
+    text-align: center; /* Center paragraph text */
+    margin-top: 15px; /* Space above paragraph */
+  }
+  
+  p.sign-up-text a {
+    color: var(--primary-color); /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  p.sign-up-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .error-message {
+    color: var(--error-color); /* Error message color */
+    text-align: center; /* Center error message */
+    margin-bottom: 10px; /* Space below error message */
+  }
+  
+  .btn-login {        /* Makes the button behave like an inline element */
+    padding: 12px 30px;           /* Top/bottom and left/right padding */
+    font-size: 16px;              /* Font size for the button text */
+    color: #ffffff;               /* Text color */
+    background-color: #887a1c;   /* Bootstrap primary color */
+    border: none;                 /* Remove default border */
+    border-radius: 5px;          /* Slightly rounded corners */
+    cursor: pointer;              /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    text-align: center;           /* Center the text */
+    text-decoration: none;        /* Remove underline for links */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .btn-login:active {
+    background-color: #004494; /* Even darker shade when clicked */
+    transform: translateY(0); /* Reset lift effect */
+  }
+  

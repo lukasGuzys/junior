@@ -1,0 +1,78 @@
+/* Style for the whole navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between; /* Space between logo/links and button */
+  align-items: center; /* Align items vertically in the center */
+  padding: 10px 20px; /* Padding for the whole toolbar */
+  background-color: white; /* White background */
+  border-bottom: 1px solid #ccc; /* Add a subtle bottom border */
+}
+
+/* Container for logo and links */
+.logo-nav {
+  display: flex;
+  align-items: center; /* Align logo and text vertically in the center */
+}
+
+/* Style for the logo */
+.logo {
+  height: 50px; /* Adjust the height of the logo */
+  width: auto;
+}
+
+/* Style for the logo text */
+.logo-name {
+  font-size: 2rem;
+  color: black;
+  margin-right: 30px; /* Space between the logo text and navigation */
+}
+
+/* Navigation links */
+ul {
+  display: flex; /* Make the links horizontal */
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding-top: 15px;
+}
+
+li {
+  
+  font-size: 20px; /* Increase the font size */
+  margin-right: 30px; /* Space between each link */
+}
+
+a {
+  color: black; /* Black text for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+a:hover {
+  color: #f0a500; /* Change link color on hover to gold */
+}
+
+
+
+/* Ensure the button stays inside the navigation */
+nav div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the elements vertically on small screens */
+    align-items: flex-start; /* Align to the left on small screens */
+  }
+
+  ul {
+    margin-top: 10px; /* Add spacing between the links and the button */
+  }
+
+  .logo-nav {
+    margin-bottom: 10px; /* Add spacing between logo/links and button */
+  }
+
+}

@@ -1,0 +1,26 @@
+div {
+    text-align: center; 
+  }
+  
+
+  h1 {
+    padding: 10px;
+    font-weight: bold; 
+    color: black; 
+    margin: 0; 
+  }
+  
+  .highlight {
+    color: purple;
+  }
+  
+  p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px; 
+  }
+  
+  .TextArea-container{
+    padding: 50px;
+  }
